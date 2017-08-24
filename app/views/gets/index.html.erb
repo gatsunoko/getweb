@@ -1,2 +1,17 @@
 <h1>Gets#index</h1>
+
+<%= form_tag(gets_getweb_path, :method => 'post') do %>
+  <p>url</p>
+  <%= text_field_tag :url, '', :id => 'url' %>
+  <p>話数</p>
+  <%= text_field_tag :number, '', :id => 'number' %>
+  <p>枚数</p>
+  <%= text_field_tag :count, '', :id => 'count' %>
+  <br>
+  <br>
+  <%= submit_tag(gets_getweb_path) %>
+<% end %>
+
+<%= link_to 'ゲット', gets_show_path %>
+
 <p>Find me in app/views/gets/index.html.erb</p>
